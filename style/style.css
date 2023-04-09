@@ -44,6 +44,12 @@ input {
     margin: 10px;
 }
 
+button {
+    display: block;
+    padding: 5px 15px;
+    margin: 10px auto 0px auto;
+}
+
 label {
     line-height: 25px;
     text-align: justify;
