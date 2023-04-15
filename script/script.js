@@ -18,10 +18,12 @@ const paragraph = document.querySelector('p')
 function show_score(score) {
     area_result.classList.add('show_div')
 
-    if (score === 1 || score === 0) {
-        paragraph.innerHTML = `Você acertou ${score} pergunta`
+    if (score === 1) {
+        paragraph.innerHTML = `Você acertou ${score} pergunta.`
+    } else if (score === 0){
+        paragraph.innerHTML = `Você acertou nenhuma pergunta.`
     } else {
-        paragraph.innerHTML =  `Você acertou ${score} perguntas` 
+        paragraph.innerHTML =  `Você acertou ${score} perguntas.` 
     }
 }
 
