@@ -13,23 +13,15 @@ const btn_show_results = document.querySelector('input[type = submit]')
 
 const area_result = document.querySelector('div.result')
 
+const paragraph = document.querySelector('p')
+
 function show_score(score) {
     area_result.classList.add('show_div')
 
-    const paragraph = document.createElement('p')
-
     if (score === 1 || score === 0) {
-        const text = document.createTextNode(`Você acertou ${score} pergunta`)
-
-        paragraph.appendChild(text)
-
-        area_result.appendChild(paragraph)
+        paragraph.innerHTML = `Você acertou ${score} pergunta`
     } else {
-        const text = document.createTextNode(`Você acertou ${score} perguntas`)
-
-        paragraph.appendChild(text)
-
-        area_result.appendChild(paragraph)
+        paragraph.innerHTML =  `Você acertou ${score} perguntas` 
     }
 }
 
