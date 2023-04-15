@@ -11,7 +11,27 @@ const tenth_question = document.getElementsByName('tenth_question')
 
 const btn_show_results = document.querySelector('input[type = submit]')
 
+const area_result = document.querySelector('div.result')
 
+function show_score(score) {
+    area_result.classList.add('show_div')
+
+    const paragraph = document.createElement('p')
+
+    if (score === 1 || score === 0) {
+        const text = document.createTextNode(`Você acertou ${score} pergunta`)
+
+        paragraph.appendChild(text)
+
+        area_result.appendChild(paragraph)
+    } else {
+        const text = document.createTextNode(`Você acertou ${score} perguntas`)
+
+        paragraph.appendChild(text)
+
+        area_result.appendChild(paragraph)
+    }
+}
 
 btn_show_results.addEventListener('click', function show_results(event) {
     event.preventDefault()
@@ -40,5 +60,5 @@ btn_show_results.addEventListener('click', function show_results(event) {
         score++
     }
 
-    alert (score)
+    show_score(score)
 })

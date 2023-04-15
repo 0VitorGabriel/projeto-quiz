@@ -55,6 +55,14 @@ label {
     text-align: justify;
 }
 
+.show_result {
+    margin: 20px 0px 10px 0px;
+}
+
+div.result > p {
+    text-align: center;
+}
+
 @media screen and (min-width: 768px) {
     main {
         width: 500px;
