@@ -25,7 +25,7 @@ function show_score(score) {
     }
 }
 
-btn_show_results.addEventListener('click', function show_results(event) {
+btn_show_results.addEventListener('click', function verify_questions(event) {
     event.preventDefault()
 
     let score = 0
