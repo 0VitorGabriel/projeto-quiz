@@ -44,7 +44,7 @@ input {
     margin: 10px;
 }
 
-button {
+input[type = submit] {
     display: block;
     padding: 5px 15px;
     margin: 10px auto 0px auto;
