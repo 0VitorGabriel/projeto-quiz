@@ -22,8 +22,10 @@ function show_score(score) {
         paragraph.innerHTML = `Você acertou ${score} pergunta.`
     } else if (score === 0){
         paragraph.innerHTML = `Você acertou nenhuma pergunta.`
+    } else if (score === 10){
+        paragraph.innerHTML =  `Você acertou todas as perguntas.` 
     } else {
-        paragraph.innerHTML =  `Você acertou ${score} perguntas.` 
+        paragraph.innerHTML =  `Você acertou ${score} perguntas.`
     }
 }
 
