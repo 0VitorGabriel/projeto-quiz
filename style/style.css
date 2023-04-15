@@ -59,7 +59,7 @@ label {
     margin: 20px 0px 10px 0px;
 }
 
-div.result > p {
+.center_paragraph {
     text-align: center;
 }
 

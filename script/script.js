@@ -17,6 +17,7 @@ const paragraph = document.querySelector('p')
 
 function show_score(score) {
     area_result.classList.add('show_div')
+    paragraph.classList.add('center_paragraph')
 
     switch (score) {
         case 1:
