@@ -56,11 +56,16 @@ label {
 }
 
 .show_div {
-    background-color: rgba(0, 255, 0, 0.719);
+    background-color: #00ff00b7;
     border-radius: 10px;
     margin: 20px 0px 10px 0px;
     padding: 20px;
     font-style: italic;
+}
+
+.situation_zero {
+    background-color: #ff0000;
+    color: #FFFFFf;
 }
 
 .center_paragraph {
