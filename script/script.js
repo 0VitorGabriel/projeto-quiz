@@ -21,15 +21,19 @@ function show_score(score) {
 
     switch (score) {
         case 1:
+            area_result.classList.remove('situation_zero')
             paragraph.innerHTML = `Você acertou ${score} pergunta.`
             break
         case 0:
+            area_result.classList.add('situation_zero')
             paragraph.innerHTML = `Você acertou nenhuma pergunta.`
             break
         case 10:
+            area_result.classList.remove('situation_zero')
             paragraph.innerHTML =  `Você acertou todas as perguntas.` 
             break
         default:
+            area_result.classList.remove('situation_zero')
             paragraph.innerHTML =  `Você acertou ${score} perguntas.`
     }
 }
